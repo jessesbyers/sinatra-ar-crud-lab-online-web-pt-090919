@@ -40,6 +40,7 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/articles/:id' do
+    # Article.find(?)
     article = Article.update(params)
     article.save
   end
